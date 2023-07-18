@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculator Project</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2 class="cals"><i class="bi bi-calculator"></i></h2>
+    <div class="output">
+      <input type="text" placeholder="0" readonly>
+    </div>
+    <div class="btns">
+      <button id="clear" onclick="clr()" class="funbtn">C</button>
+      <button onclick="del()" class="funbtn"><i class="bi bi-backspace" style="color: wheat;"></i></button>
+      <button onclick="insert('%')" class="funbtn">%</button>
+      <button onclick="insert('/')" class="funbtn">÷</button>
+      <button onclick="insert('7')">7</button>
+      <button onclick="insert('8')">8</button>
+      <button onclick="insert('9')">9</button>
+      <button onclick="insert('*')" class="funbtn"><i class="bi bi-x-lg" style="color: wheat;"></i></button>
+      <button onclick="insert('4')">4</button>
+      <button onclick="insert('5')">5</button>
+      <button onclick="insert('6')">6</button>
+      <button onclick="insert('-')" class="funbtn"><i class="bi bi-dash-lg" style="color: wheat;"></i></button>
+      <button onclick="insert('1')">1</button>
+      <button onclick="insert('2')">2</button>
+      <button onclick="insert('3')">3</button>
+      <button onclick="insert('+')" class="funbtn"><i class="bi bi-plus-lg" style="color: wheat;"></i></button>
+      <button onclick="insert('00')">00</button>
+      <button onclick="insert('0')">0</button>
+      <button onclick="insert('.')"><i class="bi bi-dot" style="color: wheat;"></i></button>
+      <button onclick="calc()" class="funbtn"> =</button>
+    </div>
+    <!-- <h2 class="cal">Designed By Madhav</h2> -->
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
